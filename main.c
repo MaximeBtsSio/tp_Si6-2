@@ -5,7 +5,8 @@ int main ()
 double operateurA, operateurB, resultat+, resultat-,resultat*,resultat/;
 string Operation;
 
-printf("Veuillez choisir le type de calcul que vous souhaitez executer");
+printf ("veuillez choisir l'opération a effectuer entre la Multiplication, Division, Soustraction, Addition");
+scanf (Operation);
 
 
 
@@ -47,8 +48,7 @@ printf (resultat*);
 resultat/=add(A,B)
 printf (resultat/);
 
-printf ("veuillez choisir l'opération a effectuer entre la Multiplication, Division, Soustraction, Addition");
-scanf (Operation);
+
 
 switch (operation)
 {
