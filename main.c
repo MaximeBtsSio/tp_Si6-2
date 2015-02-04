@@ -1,5 +1,4 @@
 
-#tp_Si6-2
 
 int main ()
 {
