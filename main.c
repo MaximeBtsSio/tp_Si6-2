@@ -1,4 +1,7 @@
-int main
+
+#tp_Si6-2
+
+int main ()
 {
 double operateurA, operateurB, resultat+, resultat-,resultat*,resultat/;
 string Operation;
@@ -44,6 +47,9 @@ printf (resultat*);
 //résultat de la fontion Diviser
 resultat/=add(A,B)
 printf (resultat/);
+
+printf ("veuillez choisir l'opération a effectuer entre la Multiplication, Division, Soustraction, Addition");
+scanf (Operation);
 
 switch (operation)
 {
