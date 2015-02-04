@@ -1,7 +1,7 @@
 int main
 {
 double operateurA, operateurB, resultat;
-
+printf();
 printf("Saisir A");
 scanf(operateurA);
 printf("Saisir B");
