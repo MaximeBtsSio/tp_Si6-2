@@ -6,14 +6,14 @@ double operateurA, operateurB, resultat+, resultat-,resultat*,resultat/;
 string Operation;
 
 printf ("veuillez choisir l'opération a effectuer entre la Multiplication, Division, Soustraction, Addition");
-scanf (Operation);
+scanf (Operation); //saisie du choix de l'operation a effectuer
 
 
 
-printf("Saisir A");
-scanf(operateurA);
-printf("Saisir B");
-scanf(operateurB);
+printf("Saisir A"); 
+scanf(operateurA); //saisie de la première valeur
+printf("Saisir B"); 
+scanf(operateurB); //saisie de la seconde valeur
 
 //déclaration de la fonction Soustraire
 double add(double A,B)
