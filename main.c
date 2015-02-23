@@ -1,73 +1,87 @@
-
-
-int main ()
+#include <iostream>
+ 
+using namespace std;
+ 
+int main()
 {
-double operateurA, operateurB, resultat+, resultat-,resultat*,resultat/;
-string Operation;
-
-printf ("veuillez choisir l'opération a effectuer entre la Multiplication, Division, Soustraction, Addition");
-scanf (Operation); //saisie du choix de l'operation a effectuer
-
-
-
-printf("Saisir A"); 
-scanf(operateurA); //saisie de la première valeur
-printf("Saisir B"); 
-scanf(operateurB); //saisie de la seconde valeur
-
-//déclaration de la fonction Soustraire
-double add(double A,B)
-{
-return A-B;
-}
-//déclaration de la fonction Additioner
-double add(double A,B)
-{
-  return A+B
-}
-//déclaration de la fonction Multiplier
-double add(double A,B)
-{
-  return A*B;
-}
-//déclaration de la fonction Diviser
-double add(double A,B)
-{
-  return A/B;
-}
-//résultat de la fontion Soustraire
-resultat-=add(A,B)
-printf (resultat-);
-//résultat de la fontion Additioner
-resultat+=add(A,B)
-printf (resultat+);
-//résultat de la fontion Multiplier
-resultat*=add(A,B)
-printf (resultat*);
-//résultat de la fontion Diviser
-resultat/=add(A,B)
-printf (resultat/);
-
-
-
-switch (operation)
-{
-  case operation = "Multiplication"
-  A*B;
-  break;
-  case operation = "Division"
-  A/B;
-  break;
-  case operation = "Soustraction"
-  A-B;
-  break;
-  case operation = "Addition"
-  A+B;
-  break;
-  
-  default
-  printf("Erreur");
-  break;
-}
-
+ 
+    cout << "Bonjour, quel operation souhaitez vous effectuer ?" << endl << endl;
+ 
+                    cout << "Taper 1 pour une multiplication" << endl; // Choix pour la multiplication
+                    cout << "Taper 2 pour une addition"       << endl; // Choix pour l'addition
+                    cout << "Taper 3 pour une soustraction"   << endl; // Choix pour la soustraction
+                    cout << "Taper 4 pour une division"       << endl; // Choix pour la division
+    int choix (0);
+    cin >> choix; //saisie du choix de l'operation
+ 
+    switch(choix)
+    {
+        case 1 : 
+            {
+                cout << "Choisissez 2 nombres a multiplier:" << endl;
+                double nombresUtilisateur1(0), nombresUtilisateur2(0);
+                cin >> nombresUtilisateur1; // premier nombre
+                cin >> nombresUtilisateur2; // deuxieme nombre
+ 
+                double resultat(0);
+                resultat = nombresUtilisateur1 * nombresUtilisateur2; //operation de la multiplication
+ 
+                cout << "le resultat de la multiplication est : " << resultat << endl; //resultat de la multiplication
+                break;
+ 
+            }
+ 
+ 
+        case 2 :
+            {
+                cout << "Choisissez 2 nombres a additioner" << endl;
+                double nombresUtilisateur1(0), nombresUtilisateur2(0);
+                cin >> nombresUtilisateur1; // premier nombre
+                cin >> nombresUtilisateur2; // deuxieme nombre
+ 
+                double resultat(0);
+                resultat = nombresUtilisateur1 + nombresUtilisateur2;//operation de l'addition
+ 
+                cout << "le resultat de l'addition est : " << resultat << endl;//resultat de l'addition
+                break;
+ 
+            }
+ 
+ 
+ 
+        case 3 :
+            {
+                cout << "Choisissez 2 nombres a soustraire" << endl;
+                double nombresUtilisateur1(0), nombresUtilisateur2(0);
+                cin >> nombresUtilisateur1; // premier nombre
+                cin >> nombresUtilisateur2; // deuxieme nombre
+ 
+                double resultat(0);
+                resultat = nombresUtilisateur1 - nombresUtilisateur2;//operation de la soustraction
+ 
+                cout << "le resultat de la soustraction est : " << resultat << endl;//resultat de la soustraction
+                break;
+ 
+            }
+ 
+ 
+        case 4 :
+            {
+ 
+                cout << "Choisissez 2 nombres a diviser" << endl;
+                double nombresUtilisateur1(0), nombresUtilisateur2(0);
+                cin >> nombresUtilisateur1; // premier nombre
+                cin >> nombresUtilisateur2; // deuxieme nombre
+ 
+                double resultat(0);
+                resultat = nombresUtilisateur1 / nombresUtilisateur2;//operation de la division
+ 
+                cout << "le resultat de la division est : " << resultat << endl;//resultat de la division
+                break;
+            }
+ 
+    }
+ 
+ 
+    return 0;
 }
