@@ -7,16 +7,16 @@ int main()
  
     cout << "Bonjour, quel operation souhaitez vous effectuer ?" << endl << endl;
  
-                    cout << "Taper 1 pour une multiplication" << endl; // Choix pour la multiplication
-                    cout << "Taper 2 pour une addition"       << endl; // Choix pour l'addition
-                    cout << "Taper 3 pour une soustraction"   << endl; // Choix pour la soustraction
-                    cout << "Taper 4 pour une division"       << endl; // Choix pour la division
+                    cout << "Taper 1 pour une multiplication" << endl; // \ Choix pour la multiplication
+                    cout << "Taper 2 pour une addition"       << endl; // \ Choix pour l'addition
+                    cout << "Taper 3 pour une soustraction"   << endl; // \ Choix pour la soustraction
+                    cout << "Taper 4 pour une division"       << endl; // \ Choix pour la division
     int choix (0);
     cin >> choix; //saisie du choix de l'operation
  
     switch(choix)
     {
-        case 1 : 
+        case 1 : // Multiplication
             {
                 cout << "Choisissez 2 nombres a multiplier:" << endl;
                 double nombresUtilisateur1(0), nombresUtilisateur2(0);
@@ -32,7 +32,7 @@ int main()
             }
  
  
-        case 2 :
+        case 2 : //Addition
             {
                 cout << "Choisissez 2 nombres a additioner" << endl;
                 double nombresUtilisateur1(0), nombresUtilisateur2(0);
@@ -49,7 +49,7 @@ int main()
  
  
  
-        case 3 :
+        case 3 ://Soustraction
             {
                 cout << "Choisissez 2 nombres a soustraire" << endl;
                 double nombresUtilisateur1(0), nombresUtilisateur2(0);
@@ -65,7 +65,7 @@ int main()
             }
  
  
-        case 4 :
+        case 4 : //division
             {
  
                 cout << "Choisissez 2 nombres a diviser" << endl;
