@@ -1,83 +1,105 @@
 #include <iostream>
- 
+#include <cstdint>
+
 using namespace std;
  
 int main()
 {
- 
+	int choix (0);
+
+/// \param Choix pour la multiplication
+/// \paramChoix pour l'addition
+/// \paramChoix pour la soustraction
+/// \param Choix pour la division
+/// \param saisie du choix de l'operation
+
     cout << "Bonjour, quel operation souhaitez vous effectuer ?" << endl << endl;
- 
-                    cout << "Taper 1 pour une multiplication" << endl; // \ Choix pour la multiplication
-                    cout << "Taper 2 pour une addition"       << endl; // \ Choix pour l'addition
-                    cout << "Taper 3 pour une soustraction"   << endl; // \ Choix pour la soustraction
-                    cout << "Taper 4 pour une division"       << endl; // \ Choix pour la division
-    int choix (0);
-    cin >> choix; //saisie du choix de l'operation
+
+                    cout << "Taper 1 pour une multiplication" << endl; 
+                    cout << "Taper 2 pour une addition"       << endl; 
+                    cout << "Taper 3 pour une soustraction"   << endl; 
+                    cout << "Taper 4 pour une division"       << endl; 
+
+
+    cin >> choix;
  
     switch(choix)
     {
-        case 1 : // Multiplication
+/// \param Multiplication
+        case 1 : 
             {
+/// \param premier nombre
+/// \param deuxieme nombre
                 cout << "Choisissez 2 nombres a multiplier:" << endl;
                 double nombresUtilisateur1(0), nombresUtilisateur2(0);
-                cin >> nombresUtilisateur1; // premier nombre
-                cin >> nombresUtilisateur2; // deuxieme nombre
+                cin >> nombresUtilisateur1; 
+                cin >> nombresUtilisateur2; 
+
  
                 double resultat(0);
-                resultat = nombresUtilisateur1 * nombresUtilisateur2; //operation de la multiplication
- 
-                cout << "le resultat de la multiplication est : " << resultat << endl; //resultat de la multiplication
-                break;
+/// \param operation de la multiplication
+                resultat = nombresUtilisateur1 * nombresUtilisateur2; 
+/// \param resultat de la multiplication
+                cout << "le resultat de la multiplication est : " << resultat << endl; 
+                break; 
  
             }
  
- 
-        case 2 : //Addition
+/// \param Addition
+        case 2 : 
             {
+/// \param premier nombre
+/// \param deuxieme nombre
                 cout << "Choisissez 2 nombres a additioner" << endl;
                 double nombresUtilisateur1(0), nombresUtilisateur2(0);
-                cin >> nombresUtilisateur1; // premier nombre
-                cin >> nombresUtilisateur2; // deuxieme nombre
+                cin >> nombresUtilisateur1;
+                cin >> nombresUtilisateur2; 
  
                 double resultat(0);
-                resultat = nombresUtilisateur1 + nombresUtilisateur2;//operation de l'addition
- 
-                cout << "le resultat de l'addition est : " << resultat << endl;//resultat de l'addition
+/// \param operation de l'addition
+                resultat = nombresUtilisateur1 + nombresUtilisateur2;
+/// \param resultat de l'addition
+                cout << "le resultat de l'addition est : " << resultat << endl;
                 break;
  
             }
  
  
- 
-        case 3 ://Soustraction
+/// \param Soustraction
+        case 3 :
             {
+/// \param premier nombre
+/// \param deuxieme nombre
                 cout << "Choisissez 2 nombres a soustraire" << endl;
                 double nombresUtilisateur1(0), nombresUtilisateur2(0);
-                cin >> nombresUtilisateur1; // premier nombre
-                cin >> nombresUtilisateur2; // deuxieme nombre
+                cin >> nombresUtilisateur1; 
+                cin >> nombresUtilisateur2; 
  
                 double resultat(0);
-                resultat = nombresUtilisateur1 - nombresUtilisateur2;//operation de la soustraction
- 
-                cout << "le resultat de la soustraction est : " << resultat << endl;//resultat de la soustraction
+/// \param operation de la soustraction
+                resultat = nombresUtilisateur1 - nombresUtilisateur2;
+/// \param resultat de la soustraction 
+                cout << "le resultat de la soustraction est : " << resultat << endl;
                 break;
  
             }
  
- 
-        case 4 : //division
+ /// \param division
+        case 4 : 
             {
- 
+/// \param premier nombre 
+/// \param deuxieme nombre
                 cout << "Choisissez 2 nombres a diviser" << endl;
                 double nombresUtilisateur1(0), nombresUtilisateur2(0);
-                cin >> nombresUtilisateur1; // premier nombre
-                cin >> nombresUtilisateur2; // deuxieme nombre
+                cin >> nombresUtilisateur1; 
+                cin >> nombresUtilisateur2; 
  
                 double resultat(0);
-                resultat = nombresUtilisateur1 / nombresUtilisateur2;//operation de la division
- 
-                cout << "le resultat de la division est : " << resultat << endl;//resultat de la division
-                break;
+/// \param operation de la division
+                resultat = nombresUtilisateur1 / nombresUtilisateur2;
+/// \param resultat de la division 
+                cout << "le resultat de la division est : " << resultat << endl;
+                break; 
             }
  
     }
